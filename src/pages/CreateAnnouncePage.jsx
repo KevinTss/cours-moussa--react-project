@@ -1,12 +1,12 @@
 import NavMenu from "../components/layouts/NavMenu";
 
-const HomePage = () => {
+const CreateAnnouncePage = () => {
   return (
     <div>
       <NavMenu />
-      <main>page home</main>
+      <main>page create announce</main>
     </div>
   );
 };
 
-export default HomePage;
+export default CreateAnnouncePage;

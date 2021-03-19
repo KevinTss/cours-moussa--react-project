@@ -1,28 +1,15 @@
-// import logo from "./logo.svg";
-import "./App.css";
 import React from "react";
-import HomePage from "./pages/HomePage";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+
+import "./App.css";
+
+import Router from "./router";
 
 class App extends React.Component {
-  constructor() {
-    console.log("constructor");
-    super();
-    this.state = {
-      name: "Albert",
-    };
-  }
-
-  componentDidMount() {
-    console.log("componentDidMount");
-    console.log("props", this.props.moussa);
-  }
-
   render() {
-    console.log("render");
     return (
-      <div id="ok" className="ke">
-        coucou {this.state.name}
-        <HomePage />
+      <div>
+        <Router />
       </div>
     );
   }
