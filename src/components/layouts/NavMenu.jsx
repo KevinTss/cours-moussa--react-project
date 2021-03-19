@@ -1,18 +1,16 @@
-import { Link } from "react-router-dom";
-
+import { Header, LinkEl } from "./style.js";
 import logo from "./../../logo.svg";
 
 const NavMenu = () => {
   return (
-    <header>
-      <div>
-        <img className="logo" src={logo} alt="logo" />
-      </div>
+    <Header>
+      <img className="logo" src={logo} alt="logo" />
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/create-announce">create announce</Link>
+        <LinkEl to="/">Home</LinkEl>
+        <LinkEl to="/create-announce">create announce</LinkEl>
+        <LinkEl to="/login">Login</LinkEl>
       </nav>
-    </header>
+    </Header>
   );
 };
 
