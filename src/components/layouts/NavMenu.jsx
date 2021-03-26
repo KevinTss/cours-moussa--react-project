@@ -9,6 +9,8 @@ const NavMenu = () => {
         <LinkEl to="/">Home</LinkEl>
         <LinkEl to="/create-announce">create announce</LinkEl>
         <LinkEl to="/login">Login</LinkEl>
+        <LinkEl to="/payment">pay</LinkEl>
+        <LinkEl to="/subscribe">subscribe</LinkEl>
       </nav>
     </Header>
   );
